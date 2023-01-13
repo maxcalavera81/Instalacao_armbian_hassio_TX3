@@ -59,3 +59,10 @@ Vão novamente confirmar o ip da vossa box e fazem o processo de acesso pelo put
 Aqui vamos entrar com o acesso root, metemos então root no user e depois a pass que escolheram e já têm acesso ao armbian. Resta agora correr apenas mais um comando para fazer toda a instalação necessária para o Home Assistant que se segue.
 ```curl -sL https://raw.githubusercontent.com/maxcalavera81/instalacao-armbian/main/homeassistant_installation.sh | bash -s```
 Depois de tudo bem sucedido vai aparecer a seguinte caixa e selecionamos qemuarm-64 com a seta para baixo e dá-mos enter.
+
+![osagents](https://user-images.githubusercontent.com/43672635/212336624-b7161dfe-b0d1-4440-a8aa-589c95bd3abb.jpeg)
+
+19 - Neste momento será instalado o home assistant com o supervisor.
+
+20 - Depois apenas tens de ir ao teu browser e meter http://ip_da_box:8123 e aguardar a instalação.
+Boas instalações
