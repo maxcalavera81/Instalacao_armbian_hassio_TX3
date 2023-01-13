@@ -35,3 +35,27 @@ Quando entrarem vai pedir-vos para colocar um Username e uma Password nova, é s
 12- agora vamos escolher a opção 1.
 
 ![opcao1](https://user-images.githubusercontent.com/43672635/212270022-2681da32-4073-4102-85f8-3daa138bbdd9.jpeg)
+
+13- Aqui vamos escolher o username.
+
+![user name](https://user-images.githubusercontent.com/43672635/212333440-deb4cfc2-1f09-4f76-ae35-2d5c272f1a41.jpeg)
+
+14 - Aqui no menu seguinte apenas vamos dar enter…
+
+![enter](https://user-images.githubusercontent.com/43672635/212333795-0eef3850-bc21-4ff2-8772-10e93a15e41e.jpeg)
+
+15 - Depois disto já estamos prontos para instalar o armbian dando o seguinte comando: ```armbian-install```.
+
+16 - Depois do comando dado irá aparecer uma lista de dtb´s ao qual deveremos escolher o mesmo escolhilho no ponto x, que poderá ser o 512, 514...
+
+![dtb](https://user-images.githubusercontent.com/43672635/212334717-b3a50641-f55c-4f01-b631-e1b2b3f32d07.jpeg)
+
+17 - Finalmente após alguma espera (nunca interrompam o processo) vamos ter esta msg no final…
+
+![sucess](https://user-images.githubusercontent.com/43672635/212335189-f2d2090b-b343-4dc0-9509-d9d5f5859312.jpeg)
+
+18 - Nesta altura devem retirar a pen da vossa box desligar da energia e voltar a ligar.
+Vão novamente confirmar o ip da vossa box e fazem o processo de acesso pelo putty de igual forma que na fase inicial.
+Aqui vamos entrar com o acesso root, metemos então root no user e depois a pass que escolheram e já têm acesso ao armbian. Resta agora correr apenas mais um comando para fazer toda a instalação necessária para o Home Assistant que se segue.
+```curl -sL https://raw.githubusercontent.com/maxcalavera81/instalacao-armbian/main/homeassistant_installation.sh | bash -s```
+Depois de tudo bem sucedido vai aparecer a seguinte caixa e selecionamos qemuarm-64 com a seta para baixo e dá-mos enter.
