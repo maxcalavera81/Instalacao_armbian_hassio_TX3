@@ -8,9 +8,15 @@ Desse modo, não darei nenhum tipo de suporte a este tutorial, ficando o mesmo a
 
 Devem de usar a versão Armbian_bullseye_xxxxx por ser baseada em debian e estar atualizada com a última versão. As imagens de devem de usar são as Armbian_23.02.0_amlogic_s905x3_bullseye_5.15.86_xxxxxxxxxx.img.gz, como tem 2 versões deves experimentar uma delas caso não funcione a que testaste.
 
+![imagem debian](https://user-images.githubusercontent.com/43672635/212434755-8fd80164-6986-4765-8f2f-ae728894f838.png)
+
 3 – Com uma PEN formatada (podem e devem usar https://www.sdcard.org/downloads/formatter/ para o fazer) vamos flashar a imagem o com o BalenaEtcher ou rufus na PEN.
 
 4 – Quando concluido, abrir uEnv.txt que esta na raiz da pen e substituir a dtb que lá está por uma referente a tua tx3.
+
+![dtb](https://user-images.githubusercontent.com/43672635/212434830-b2125e62-b6bc-4f34-8096-d7f093997da0.png)
+
+![uenv](https://user-images.githubusercontent.com/43672635/212434955-3c84c7e5-49ce-41e8-b596-eefc1b564e4a.png)
 
 5 – Ejetar a PEN do computador e colocar na porta UBS 3.0 na lateral esquerda da TANIX.
 
