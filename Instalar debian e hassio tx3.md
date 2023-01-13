@@ -56,7 +56,8 @@ Quando entrarem vai pedir-vos para colocar um Username e uma Password nova, é s
 
 18 - Nesta altura devem retirar a pen da vossa box desligar da energia e voltar a ligar.
 Vão novamente confirmar o ip da vossa box e fazem o processo de acesso pelo putty de igual forma que na fase inicial.
-Aqui vamos entrar com o acesso root, metemos então root no user e depois a pass que escolheram e já têm acesso ao armbian. Resta agora correr apenas mais um comando que ira fazer atualizações pendentes do armbian assim como a instalação do Home Assistant.
+
+19 - Agora vamos entrar com o acesso root, metemos então root no user e depois a pass que escolheram e já têm acesso ao armbian. Resta agora correr apenas mais um comando que ira fazer atualizações pendentes do armbian (possivelmente poderá ser feito um reiniciar automatico, se isso acontecer é voltar a repetir o ponto 19) assim como a instalação do Home Assistant supervisor.
 Este é o comando que devem colar no putty ```curl -sL https://raw.githubusercontent.com/maxcalavera81/Instala-o-armbian-hassio-TX3/main/instalacao_homeassistant.sh | bash -s```
 Depois de tudo bem sucedido vai aparecer a seguinte caixa e selecionamos ```qemuarm-64``` com a seta para baixo e dá-mos enter.
 
