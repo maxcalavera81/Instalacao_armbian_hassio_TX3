@@ -68,4 +68,14 @@ Depois de tudo bem sucedido vai aparecer a seguinte caixa e selecionamos ```qemu
 
 21 - Após instalação do home assistant resta criar login ou repor backups. Vais reparar que os alertas do apparmor e cgroups ainda lá continuam, neste momento tens de fazer um reboot ao host para que todas as alterações sejam aplicadas.
 
+Se quiserem usar o bluetooth da box vamos novamente ao putty e entramos.
+
+![network](https://user-images.githubusercontent.com/43672635/212344741-788c48c3-e7e4-4fce-b1b4-25d86ddac8f3.png)
+
+Vamos a opção ```network``` e depois vamos escolher a opção ```bt install``` e aguardam a instalação. 
+
+![bt install](https://user-images.githubusercontent.com/43672635/212345004-a5651ad2-c35e-4fa4-81f5-170757be65f1.png)
+
+Depois damos um ```sudo reboot``` e quando reinicar já tens a box pronta para usufruir do Home Assistant.
+
 Boas instalações
