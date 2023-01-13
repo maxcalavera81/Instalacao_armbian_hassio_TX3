@@ -1,4 +1,4 @@
-Após este tutorial abaixo ter sido realizado, verificou-se que existe algumas complicações a nivel de instalação.
+Apesar deste tutorial ter sido testado, pode ser expectável adversidades que não podem ser simuladas devido ao hw disponível e momento de referência das versões de sw utilizadas. 
 
 Desse modo, não darei nenhum tipo de suporte a este tutorial, ficando o mesmo ainda disponivel para quem quiser por sua conta e risco o usar.
 
