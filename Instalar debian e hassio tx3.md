@@ -46,7 +46,7 @@ Quando entrarem vai pedir-vos para colocar um Username e uma Password nova, é s
 
 15 - Depois disto já estamos prontos para instalar o armbian dando o seguinte comando: ```armbian-install```.
 
-16 - Depois do comando dado irá aparecer uma lista de dtb´s ao qual deveremos escolher o mesmo escolhilho no ponto x, que poderá ser o 512, 514...
+16 - Depois do comando dado irá aparecer uma lista de dtb´s ao qual deveremos escolher o mesmo escolhido no ponto 4, que poderá ser o 512, 514...
 
 ![dtb](https://user-images.githubusercontent.com/43672635/212334717-b3a50641-f55c-4f01-b631-e1b2b3f32d07.jpeg)
 
