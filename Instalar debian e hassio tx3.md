@@ -2,23 +2,23 @@ Após este tutorial abaixo ter sido realizado, verificou-se que existe algumas c
 
 Desse modo, não darei nenhum tipo de suporte a este tutorial, ficando o mesmo ainda disponivel para quem quiser por sua conta e risco o usar.
 
-1 – Fazer download do Balena Etcher - https://www.balena.io/etcher/ ou do https://app.rufeus.org/
+1 – Começamos por fazer download do Balena Etcher - https://www.balena.io/etcher/ ou do https://app.rufeus.org/
 
-2 – Fazer download do ArmBian https://github.com/ophub/amlogic-s9xxx-armbian/releases
+2 – Depois fazer download do ArmBian https://github.com/ophub/amlogic-s9xxx-armbian/releases
 
-Devem de usar a versão Armbian_bullseye_xxxxx por ser baseada em debian e estar atualizada com a última versão. As imagens de devem de usar são as Armbian_23.02.0_amlogic_s905x3_bullseye_5.15.86_xxxxxxxxxx.img.gz, como tem 2 versões devem experimentar uma delas caso não funcione a que testaste.
+Devem de usar a versão Armbian_bullseye_xxxxx por ser baseada em debian e estar atualizada com a última versão. As imagens de devem de usar são as Armbian_23.02.0_amlogic_s905x3_bullseye_5.15.86_xxxxxxxxxx.img.gz, como tem 2 versões deves experimentar uma delas caso não funcione a que testaste.
 
-3 – Usar uma PEN formatada (podem e devem usar https://www.sdcard.org/downloads/formatter/ para o fazer) e flashar o com o BalenaEtcher ou rufus na PEN.
+3 – Com uma PEN formatada (podem e devem usar https://www.sdcard.org/downloads/formatter/ para o fazer) vamos flashar a imagem o com o BalenaEtcher ou rufus na PEN.
 
 4 – Quando concluido, abrir uEnv.txt que esta na raiz e substituir a dtb que lá está por uma referente a tua tx3.
 
-5 – Ejetar a PEN do computador e colocar na UBS 3.0 na lateral esquerda da TANIX.
+5 – Ejetar a PEN do computador e colocar na porta UBS 3.0 na lateral esquerda da TANIX.
 
 6 – Ligar a TANIX ao cabo HDMI e Cabo de Rede. Atenção que a TANIX ainda deve estar desligada da eletricidade.
 
-7 – Com uma agulha (em todos os testes que fiz nunca o precisei de fazer) clicar no botão de reset atrás da TANIX até sentir o clique e vamos ligar a box a energia.
+7 – Com uma agulha (em todos os testes que fiz nunca o precisei de fazer) clicar no botão de reset atrás da TANIX até sentir o clique e vamos ligar a box á energia.
 
-8 – Quando aparecer o símbolo “TX3” no monitor/televisão, largar o botão de reset. Nesta altura espera pelo arranque da tua box e no final vai ter um ip atribuido, se tal não acontecer e tiveres certeza que tens o dtb certo (e mesmo que não tenhas) tira e volta a meter o cabo de rede sem desligar a box, (para teres a certeza do dtb só existe uma forma, abrir a box e confirmar na board).
+8 – Quando aparecer o símbolo ```TX3``` no monitor/televisão, largar o botão de reset. Nesta altura espera pelo arranque da tua box e no final vai ter um ip atribuido, se tal não acontecer e tiveres certeza que tens o dtb certo (e mesmo que não tenhas) tira e volta a meter o cabo de rede sem desligar a box, (para teres a certeza do dtb só existe uma forma, abrir a box e confirmar na board) e se mesmo assim não obteres ip teras de testar outra dtb e em ultimo caso a outra imagem do armbian como referido no ponto 2.
 
 9 - De seguida vamos fazer acesso por putty ou terminal caso uses o mac, no terminal do Mac: ssh root:1234@IP_BOX e se voltar a pedir a password é 1234
 
