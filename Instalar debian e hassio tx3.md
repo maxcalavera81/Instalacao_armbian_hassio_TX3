@@ -22,11 +22,11 @@ Devem de usar a versão Armbian_bullseye_xxxxx por ser baseada em debian e estar
 
 9 - De seguida vamos fazer acesso por putty ou terminal caso uses o mac, no terminal do Mac: ssh root:1234@IP_BOX e se voltar a pedir a password é 1234
 
+![putty](https://user-images.githubusercontent.com/43672635/212269473-e8f5bc73-39d8-4352-98cf-fd8240dec856.png)
+
 10 - Coloca o ip da box e depois vais seguir as instruções que aparecem no ecrã, (os dados de acesso caso sejam precisos é root e pass 1234).
 
 Quando entrarem vai pedir-vos para colocar um Username e uma Password nova, é só seguir os passos. Nunca esquecer estes dados. São muito importantes.
-
-![putty](https://user-images.githubusercontent.com/43672635/212269473-e8f5bc73-39d8-4352-98cf-fd8240dec856.png)
 
 11- Aqui vamos criar a pass de acesso root
 
