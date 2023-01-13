@@ -1,0 +1,37 @@
+Após este tutorial abaixo ter sido realizado, verificou-se que existe algumas complicações a nivel de instalação.
+
+Desse modo, não darei nenhum tipo de suporte a este tutorial, ficando o mesmo ainda disponivel para quem quiser por sua conta e risco o usar.
+
+1 – Fazer download do Balena Etcher - https://www.balena.io/etcher/ ou do https://app.rufeus.org/
+
+2 – Fazer download do ArmBian https://github.com/ophub/amlogic-s9xxx-armbian/releases
+
+Devem de usar a versão Armbian_bullseye_xxxxx por ser baseada em debian e estar atualizada com a última versão. As imagens de devem de usar são as Armbian_23.02.0_amlogic_s905x3_bullseye_5.15.86_xxxxxxxxxx.img.gz, como tem 2 versões devem experimentar uma delas caso não funcione a que testaste.
+
+3 – Usar uma PEN formatada (podem e devem usar https://www.sdcard.org/downloads/formatter/ para o fazer) e flashar o com o BalenaEtcher ou rufus na PEN.
+
+4 – Quando concluido, abrir uEnv.txt que esta na raiz e substituir a dtb que lá está por uma referente a tua tx3.
+
+5 – Ejetar a PEN do computador e colocar na UBS 3.0 na lateral esquerda da TANIX.
+
+6 – Ligar a TANIX ao cabo HDMI e Cabo de Rede. Atenção que a TANIX ainda deve estar desligada da eletricidade.
+
+7 – Com uma agulha (em todos os testes que fiz nunca o precisei de fazer) clicar no botão de reset atrás da TANIX até sentir o clique e vamos ligar a box a energia.
+
+8 – Quando aparecer o símbolo “TX3” no monitor/televisão, largar o botão de reset. Nesta altura espera pelo arranque da tua box e no final vai ter um ip atribuido, se tal não acontecer e tiveres certeza que tens o dtb certo (e mesmo que não tenhas) tira e volta a meter o cabo de rede sem desligar a box, (para teres a certeza do dtb só existe uma forma, abrir a box e confirmar na board).
+
+9 - De seguida vamos fazer acesso por putty ou terminal caso uses o mac, no terminal do Mac: ssh root:1234@IP_BOX e se voltar a pedir a password é 1234
+
+10 - Coloca o ip da box e depois vais seguir as instruções que aparecem no ecrã, (os dados de acesso caso sejam precisos é root e pass 1234).
+
+Quando entrarem vai pedir-vos para colocar um Username e uma Password nova, é só seguir os passos. Nunca esquecer estes dados. São muito importantes.
+
+![putty](https://user-images.githubusercontent.com/43672635/212269473-e8f5bc73-39d8-4352-98cf-fd8240dec856.png)
+
+11- Aqui vamos criar a pass de acesso root
+
+![criar pass](https://user-images.githubusercontent.com/43672635/212269776-ed27a55b-6676-4eca-a8e3-6418d0ad7947.jpeg)
+
+12- agora vamos escolher a opção 1.
+
+![opcao1](https://user-images.githubusercontent.com/43672635/212270022-2681da32-4073-4102-85f8-3daa138bbdd9.jpeg)
