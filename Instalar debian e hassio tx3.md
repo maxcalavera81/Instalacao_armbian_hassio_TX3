@@ -84,6 +84,8 @@ Vamos a opção ```network``` e depois vamos escolher a opção ```bt install```
 
 ![bt install](https://user-images.githubusercontent.com/43672635/212345004-a5651ad2-c35e-4fa4-81f5-170757be65f1.png)
 
-Depois damos um ```sudo reboot``` e quando reinicar já tens a box pronta para usufruir do Home Assistant.
+Depois de concluido a instalação basta ir ao Home Assistant e fazer a integração do bluetooth.
 
 Boas instalações
+
+Queria só salientar que os créditos da resolução dos alertas apparmor e cgroups assim como a atualização do novo script são todos dos membros Pedro Cardoso (@PCardoso7) e do Guilherme Sousa. Um muito obrigado para eles pela partilha de conhecimento.
