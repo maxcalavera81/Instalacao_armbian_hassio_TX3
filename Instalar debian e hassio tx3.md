@@ -14,7 +14,7 @@ Devem de usar a versão Armbian_bullseye_xxxxx por ser baseada em debian e estar
 
 4 – Quando concluido, abrir uEnv.txt que esta na raiz da pen e substituir a dtb que lá está por uma referente a tua tx3.
 
-![dtb](https://user-images.githubusercontent.com/43672635/212434830-b2125e62-b6bc-4f34-8096-d7f093997da0.png)
+![dtb](https://user-images.githubusercontent.com/43672635/212435135-13837ce5-d9b9-43b4-b276-49943e5dc334.png)
 
 ![uenv](https://user-images.githubusercontent.com/43672635/212434955-3c84c7e5-49ce-41e8-b596-eefc1b564e4a.png)
 
