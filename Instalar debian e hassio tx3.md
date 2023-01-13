@@ -68,7 +68,8 @@ Depois de tudo bem sucedido vai aparecer a seguinte caixa e selecionamos ```qemu
 
 21 - Após instalação do home assistant resta criar login ou repor backups. Vais reparar que os alertas do apparmor e cgroups ainda lá continuam, neste momento tens de fazer um reboot ao host para que todas as alterações sejam aplicadas.
 
-Se quiserem usar o bluetooth da box vamos novamente ao putty e entramos.
+Se quiserem usar o bluetooth da box vamos novamente ao putty e entramos. Tens de entrar com o user root epara isso metes root no user e a pass é a que escolheste
+depois dás o seguinte comando ```armbian-config``` e vai abrir uma caixa de opções.
 
 ![network](https://user-images.githubusercontent.com/43672635/212344741-788c48c3-e7e4-4fce-b1b4-25d86ddac8f3.png)
 
