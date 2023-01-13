@@ -10,7 +10,7 @@ Devem de usar a versão Armbian_bullseye_xxxxx por ser baseada em debian e estar
 
 3 – Com uma PEN formatada (podem e devem usar https://www.sdcard.org/downloads/formatter/ para o fazer) vamos flashar a imagem o com o BalenaEtcher ou rufus na PEN.
 
-4 – Quando concluido, abrir uEnv.txt que esta na raiz e substituir a dtb que lá está por uma referente a tua tx3.
+4 – Quando concluido, abrir uEnv.txt que esta na raiz da pen e substituir a dtb que lá está por uma referente a tua tx3.
 
 5 – Ejetar a PEN do computador e colocar na porta UBS 3.0 na lateral esquerda da TANIX.
 
