@@ -66,4 +66,6 @@ Depois de tudo bem sucedido vai aparecer a seguinte caixa e selecionamos ```qemu
 
 20 - Depois apenas tens de ir ao teu browser e meter http://ip_da_box:8123 e aguardar a instalação.
 
+21 - Após instalação do home assistant resta criar login ou repor backups. Vais reparar que os alertas do apparmor e cgroups ainda lá continuam, neste momento tens de fazer um reboot ao host para que todas as alterações sejam aplicadas.
+
 Boas instalações
