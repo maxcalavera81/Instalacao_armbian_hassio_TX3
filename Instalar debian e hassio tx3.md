@@ -1,6 +1,6 @@
 Apesar deste tutorial ter sido testado, pode ser expectável adversidades que não podem ser simuladas devido ao hw disponível e momento de referência das versões de sw utilizadas. 
 
-Desse modo, não darei nenhum tipo de suporte a este tutorial, ficando o mesmo ainda disponivel para quem quiser por sua conta e risco o usar.
+Desse modo, não darei nenhum tipo de suporte a este tutorial, ficando o mesmo ainda disponível para quem quiser por sua conta e risco o usar.
 
 1 – Começamos por fazer download do Balena Etcher - https://www.balena.io/etcher/ ou do https://app.rufeus.org/
 
@@ -12,7 +12,7 @@ Devem de usar a versão Armbian_bullseye_xxxxx por ser baseada em debian e estar
 
 3 – Com uma PEN formatada (podem e devem usar https://www.sdcard.org/downloads/formatter/ para o fazer) vamos flashar a imagem o com o BalenaEtcher ou rufus na PEN.
 
-4 – Quando concluido, abrir uEnv.txt que esta na raiz da pen e substituir a dtb que lá está por uma referente a tua tx3.
+4 – Quando concluído, abrir uEnv.txt que esta na raiz da pen e substituir a dtb que lá está por uma referente a tua tx3.
 
 ![dtb](https://user-images.githubusercontent.com/43672635/212435135-13837ce5-d9b9-43b4-b276-49943e5dc334.png)
 
@@ -24,7 +24,7 @@ Devem de usar a versão Armbian_bullseye_xxxxx por ser baseada em debian e estar
 
 7 – Com uma agulha (em todos os testes que fiz nunca o precisei de fazer) clicar no botão de reset atrás da TANIX até sentir o clique e vamos ligar a box á energia.
 
-8 – Quando aparecer o símbolo ```TX3``` no monitor/televisão, largar o botão de reset. Nesta altura espera pelo arranque da tua box e no final vai ter um ip atribuido, se tal não acontecer e tiveres certeza que tens o dtb certo (e mesmo que não tenhas) tira e volta a meter o cabo de rede sem desligar a box, (para teres a certeza do dtb só existe uma forma, abrir a box e confirmar na board) e se mesmo assim não obteres ip teras de testar outra dtb e em ultimo caso a outra imagem do armbian como referido no ponto 2.
+8 – Quando aparecer o símbolo ```TX3``` no monitor/televisão, largar o botão de reset. Nesta altura espera pelo arranque da tua box e no final vai ter um ip atribuído, se tal não acontecer e tiveres certeza que tens o dtb certo (e mesmo que não tenhas) tira e volta a meter o cabo de rede sem desligar a box, (para teres a certeza do dtb só existe uma forma, abrir a box e confirmar na board) e se mesmo assim não obteres ip terás de testar outra dtb e em ultimo caso a outra imagem do armbian como referido no ponto 2.
 
 9 - De seguida vamos fazer acesso por putty ou terminal caso uses o mac, no terminal do Mac: ssh root:1234@IP_BOX e se voltar a pedir a password é 1234
 
@@ -63,9 +63,9 @@ Quando entrarem vai pedir-vos para colocar um Username e uma Password nova, é s
 18 - Nesta altura devem retirar a pen da vossa box desligar da energia e voltar a ligar.
 Vão novamente confirmar o ip da vossa box e fazem o processo de acesso pelo putty de igual forma que na fase inicial.
 
-19 - Agora vamos entrar com o acesso root, metemos então root no user e depois a pass que escolheram e já têm acesso ao armbian. Resta agora correr apenas mais um comando que ira fazer atualizações pendentes do armbian (possivelmente poderá ser feito um reiniciar automatico, se isso acontecer é voltar a repetir o ponto 19) assim como a instalação do Home Assistant supervisor.
+19 - Agora vamos entrar com o acesso root, metemos então root no user e depois a pass que escolheram e já têm acesso ao armbian. Resta agora correr apenas mais um comando que ira fazer atualizações pendentes do armbian (possivelmente poderá ser feito um reiniciar automático, se isso acontecer é voltar a repetir o ponto 19) assim como a instalação do Home Assistant supervisor.
 Este é o comando que devem colar no putty ```curl -sL https://raw.githubusercontent.com/maxcalavera81/Instala-o-armbian-hassio-TX3/main/instalacao_homeassistant.sh | bash -s```
-Depois de tudo bem sucedido vai aparecer a seguinte caixa e selecionamos ```qemuarm-64``` com a seta para baixo e dá-mos enter.
+Depois de tudo bem sucedido vai aparecer a seguinte caixa e selecionamos ```qemuarm-64``` com a seta para baixo e damos enter.
 
 ![osagents](https://user-images.githubusercontent.com/43672635/212336624-b7161dfe-b0d1-4440-a8aa-589c95bd3abb.jpeg)
 
@@ -84,7 +84,7 @@ Vamos a opção ```network``` e depois vamos escolher a opção ```bt install```
 
 ![bt install](https://user-images.githubusercontent.com/43672635/212345004-a5651ad2-c35e-4fa4-81f5-170757be65f1.png)
 
-Depois de concluido a instalação basta ir ao Home Assistant e fazer a integração do bluetooth.
+Depois de concluído a instalação basta ir ao Home Assistant e fazer a integração do bluetooth.
 
 Boas instalações
 
