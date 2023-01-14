@@ -23,7 +23,7 @@ readonly HOSTNAME="homeassistant"
 # change operating system
 # ------------------------------------------------------------------------------
 update_operating_system() {
-   sed -i 's/Armbian 23.02.0-trunk Bullseye/Debian GNU/Linux 11 (bullseye)/g' etc/os-release
+   sed -i 's#Armbian 23.02.0-trunk Bullseye#Debian GNU/Linux 11 (bullseye)#g'  etc/os-release
 
 }
 
