@@ -150,7 +150,6 @@ main() {
 
   # Install ALL THE THINGS!
   update_operating_system
-  exit 0
   update_hostname
   update_armbian
   repair_apparmor_and_cgroups
