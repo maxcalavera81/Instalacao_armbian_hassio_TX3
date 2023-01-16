@@ -20,6 +20,17 @@ readonly HOSTNAME="homeassistant"
 # ==============================================================================
 
 # ------------------------------------------------------------------------------
+# change operating system
+# ------------------------------------------------------------------------------
+update_operating_system() {
+   sed -i 's#Armbian 23.02.0-trunk Bullseye#Debian GNU/Linux 11 (bullseye)#g'  /etc/os-release
+
+}
+
+
+
+
+# ------------------------------------------------------------------------------
 # Ensures the hostname of the Pi is correct.
 # ------------------------------------------------------------------------------
 update_hostname() {
@@ -147,6 +158,7 @@ main() {
   fi
 
   # Install ALL THE THINGS!
+  update_operating_system
   update_hostname
   update_armbian
   repair_apparmor_and_cgroups
