@@ -88,4 +88,4 @@ Depois de concluído a instalação basta ir ao Home Assistant e fazer a integra
 
 Boas instalações
 
-Queria só salientar que os créditos da resolução dos alertas apparmor e cgroups assim como a atualização do novo script são todos dos membros Pedro Cardoso (@PCardoso7) e do Guilherme Sousa. Um muito obrigado para eles pela partilha de conhecimento.
+Queria só salientar que os créditos da resolução dos alertas apparmor e cgroups assim como a atualização do novo script são todos dos membros Pedro Cardoso (@PCardoso7), Joel Mendes (@tv4you2016) e do Guilherme Sousa. Um muito obrigado para eles pela partilha de conhecimento.
