@@ -56,6 +56,15 @@ update_armbian() {
     armbian-update
 }
 
+# ------------------------------------------------------------------------------
+# change operating system
+# ------------------------------------------------------------------------------
+update_operating_system() {
+    echo ""
+    echo "A resolver o alerta de sistema incompatível..."
+    echo ""
+    sed -i 's#Armbian 23.02.0-trunk Bullseye#Debian GNU/Linux 11 (bullseye)#g'  /etc/os-release
+}
 
 # ------------------------------------------------------------------------------
 # Installs armbian software
@@ -142,6 +151,7 @@ main() {
   update_armbian
   repair_apparmor_and_cgroups
   install_armbian-software
+  update_operating_system
   install_dependences
   install_docker
   install_osagents
