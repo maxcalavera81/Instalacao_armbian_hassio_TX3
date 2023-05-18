@@ -85,7 +85,8 @@ install_dependences() {
   echo ""
   echo "A instalar dependencias..."
   echo ""
-  apt-get install \
+  apt install\
+  #apt-get install \
   apparmor \
   jq \
   wget \
@@ -117,7 +118,7 @@ install_osagents() {
   echo "A instalar os agents..."
   echo ""
   wget https://github.com/home-assistant/os-agent/releases/download/1.4.1/os-agent_1.4.1_linux_aarch64.deb
-  sudo dpkg -i os-agent_1.4.1_linux_aarch64.deb
+  sudo dpkg -i os-agent_1.5.1_linux_aarch64.deb
   gdbus introspect --system --dest io.hass.os --object-path /io/hass/os
 #  systemctl status haos-agent --no-pager
 }
