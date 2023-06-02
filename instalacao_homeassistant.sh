@@ -85,8 +85,8 @@ install_dependences() {
   echo ""
   echo "A instalar dependencias..."
   echo ""
-  #apt install\
-  apt-get install \
+  apt install \
+  #apt-get install \
   apparmor \
   jq \
   wget \
