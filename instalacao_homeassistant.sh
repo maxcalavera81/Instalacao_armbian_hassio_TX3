@@ -87,7 +87,7 @@ install_dependences() {
   echo ""
   sudo apt install \
   #apt-get install \
-  sudo apparmor \
+  #sudo apparmor \
   sudo jq \
   sudo wget \
   sudo curl \
