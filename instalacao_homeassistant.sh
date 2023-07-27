@@ -87,7 +87,7 @@ install_dependences() {
   echo ""
   sudo apt install \
   #apt-get install \
-  #sudo apparmor \
+  sudo apparmor \
   sudo jq \
   sudo wget \
   sudo curl \
@@ -97,6 +97,7 @@ install_dependences() {
   sudo dbus \
   sudo lsb-release \
   sudo systemd-journal-remote -y
+  sudo systemd-resolved -y
 }
 
 # ------------------------------------------------------------------------------
