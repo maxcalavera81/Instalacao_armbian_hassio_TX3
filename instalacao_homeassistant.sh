@@ -144,8 +144,8 @@ install_hassio() {
 main() {
   # Are we root?
   if [[ $EUID -ne 0 ]]; then
-    echo "This script must be run as root."
-    echo "Please try again after running:"
+    echo "Este script tem de ser corrido com o user root."
+    echo "Faz login com o user root e tenta novamente:"
     echo "  sudo su"
     exit 1
   fi
