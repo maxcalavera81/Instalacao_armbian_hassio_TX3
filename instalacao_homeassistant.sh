@@ -85,19 +85,19 @@ install_dependences() {
   echo ""
   echo "A instalar dependencias..."
   echo ""
-  sudo apt install \
+  apt install
   #apt-get install \
-  sudo apparmor \
-  sudo jq \
-  sudo wget \
-  sudo curl \
-  sudo udisks2 \
-  sudo libglib2.0-bin \
-  sudo network-manager \
-  sudo dbus \
-  sudo lsb-release \
-  sudo systemd-journal-remote -y
-  sudo systemd-resolved -y
+  apparmor
+  jq
+  wget
+  curl
+  udisks2
+  libglib2.0-bin
+  network-manager
+  dbus
+  lsb-release
+  systemd-journal-remote -y
+  systemd-resolved -y
 }
 
 # ------------------------------------------------------------------------------
