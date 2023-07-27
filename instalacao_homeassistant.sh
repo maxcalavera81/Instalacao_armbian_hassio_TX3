@@ -63,7 +63,8 @@ update_operating_system() {
     echo ""
     echo "A resolver o alerta de sistema incompatível..."
     echo ""
-    sed -i 's#Armbian 23.02.0-trunk Bullseye#Debian GNU/Linux 11 (bullseye)#g'  /etc/os-release
+    sed -i 's#Armbian 23.08.0-trunk lunar#Debian GNU/Linux 11 (bullseye)#g'  /etc/os-release
+#    sed -i 's#Armbian 23.02.0-trunk Bullseye#Debian GNU/Linux 11 (bullseye)#g'  /etc/os-release
 #    sed -i 's/Armbian 23.02.0-trunk Bullseye/Debian GNU/Linux 11 (bullseye)/g' etc/os-release
 }
 
