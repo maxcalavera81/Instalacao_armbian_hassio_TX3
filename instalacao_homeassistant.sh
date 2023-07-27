@@ -100,6 +100,18 @@ install_dependences() {
   systemd-resolved -y
 }
 
+
+
+# ------------------------------------------------------------------------------
+# journalctl
+# ------------------------------------------------------------------------------
+journalct() {
+  journalctl --disk-usage
+  journalctl --vacuum-size=128M
+  journalctl --verify
+}
+
+
 # ------------------------------------------------------------------------------
 # Installs the Docker engine
 # ------------------------------------------------------------------------------
@@ -160,6 +172,7 @@ main() {
   install_docker
   install_osagents
   install_hassio
+  journalct
 
   # Friendly closing message
   ip_addr=$(hostname -I | cut -d ' ' -f1)
