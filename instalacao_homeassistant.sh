@@ -88,7 +88,7 @@ install_dependences() {
   echo ""
   apt install \
 #  apparmor \
-  jq -y\
+#  jq -y\
   wget \
   curl \
   udisks2 \
