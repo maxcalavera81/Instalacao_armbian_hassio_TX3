@@ -100,7 +100,12 @@ install_dependences() {
   systemd-resolved -y
 }
 
-
+# ------------------------------------------------------------------------------
+# Install jq
+# ------------------------------------------------------------------------------
+install_jq() {
+  jq \
+}
 
 # ------------------------------------------------------------------------------
 # journalctl
@@ -169,6 +174,7 @@ main() {
   install_armbian-software
   update_operating_system
   install_dependences
+  install_jq
   install_docker
   install_osagents
   install_hassio
