@@ -173,7 +173,7 @@ main() {
   repair_apparmor_and_cgroups
   install_armbian-software
   update_operating_system
-  install_jq
+#  install_jq
   install_dependences
   install_docker
   install_osagents
