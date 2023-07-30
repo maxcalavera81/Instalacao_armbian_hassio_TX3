@@ -5,10 +5,10 @@
 ##                                                                   ##
 #######################################################################
 #######################################################################
-#set -o errexit  # Exit script when a command exits with non-zero status
-#set -o errtrace # Exit on error inside any functions or sub-shells
-#set -o nounset  # Exit script on use of an undefined variable
-#set -o pipefail # Return exit status of the last command in the pipe that failed
+set -o errexit  # Exit script when a command exits with non-zero status
+set -o errtrace # Exit on error inside any functions or sub-shells
+set -o nounset  # Exit script on use of an undefined variable
+set -o pipefail # Return exit status of the last command in the pipe that failed
 
 # ==============================================================================
 # GLOBALS
@@ -88,7 +88,7 @@ install_dependences() {
   echo ""
   apt install \
 #  apparmor \
-#  jq -y\
+  jq -y\
   wget \
   curl \
   udisks2 \
@@ -98,13 +98,6 @@ install_dependences() {
   lsb-release \
   systemd-journal-remote \
   systemd-resolved -y
-}
-
-# ------------------------------------------------------------------------------
-# Install jq
-# ------------------------------------------------------------------------------
-install_jq() {
-  jq \
 }
 
 # ------------------------------------------------------------------------------
@@ -168,17 +161,16 @@ main() {
   fi
 
   # Install ALL THE THINGS!
-#  update_hostname
+  update_hostname
 #  update_armbian
   repair_apparmor_and_cgroups
   install_armbian-software
   update_operating_system
-#  install_jq
   install_dependences
   install_docker
   install_osagents
   install_hassio
-#  journalct
+  journalct
 
   # Friendly closing message
   ip_addr=$(hostname -I | cut -d ' ' -f1)
