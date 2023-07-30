@@ -168,7 +168,7 @@ main() {
   fi
 
   # Install ALL THE THINGS!
-  update_hostname
+#  update_hostname
 #  update_armbian
   repair_apparmor_and_cgroups
   install_armbian-software
