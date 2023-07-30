@@ -88,7 +88,7 @@ install_dependences() {
   echo ""
   apt install \
 #  apparmor \
-  jq -y\
+#  jq -y\
   wget \
   curl \
   udisks2 \
@@ -173,8 +173,8 @@ main() {
   repair_apparmor_and_cgroups
   install_armbian-software
   update_operating_system
-  install_dependences
   install_jq
+  install_dependences
   install_docker
   install_osagents
   install_hassio
