@@ -86,9 +86,10 @@ install_dependences() {
   echo ""
   echo "A instalar dependencias..."
   echo ""
+  
   apt install \
-#  apparmor \
-  apt install jq \
+  apparmor \
+  jq \
   wget \
   curl \
   udisks2 \
@@ -97,7 +98,7 @@ install_dependences() {
   dbus \
   lsb-release \
   systemd-journal-remote \
-  systemd-resolved -y \
+  systemd-resolved -y
 }
 
 # ------------------------------------------------------------------------------
