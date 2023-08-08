@@ -103,11 +103,11 @@ install_dependences() {
 # ------------------------------------------------------------------------------
 # journalctl
 # ------------------------------------------------------------------------------
-journalct() {
-  journalctl --disk-usage
-  journalctl --vacuum-size=128M
-  journalctl --verify
-}
+#journalct() {
+#  journalctl --disk-usage
+#  journalctl --vacuum-size=128M
+#  journalctl --verify
+#}
 
 
 # ------------------------------------------------------------------------------
