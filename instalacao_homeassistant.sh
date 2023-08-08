@@ -96,9 +96,9 @@ install_dependences() {
   libglib2.0-bin \
   network-manager \
   dbus \
-  lsb-release -y
-  systemd-journal-remote -y
-  systemd-resolved -y
+  lsb-release \
+  systemd-journal-remote \
+  systemd-resolved -s
 }
 
 # ------------------------------------------------------------------------------
