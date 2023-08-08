@@ -170,7 +170,7 @@ main() {
   install_docker
   install_osagents
   install_hassio
-  journalct
+#  journalct
 
   # Friendly closing message
   ip_addr=$(hostname -I | cut -d ' ' -f1)
