@@ -87,15 +87,15 @@ install_dependences() {
   echo "A instalar dependencias..."
   echo ""
   
-  apt install
-  apparmor
-  jq
-  wget
-  curl
-  udisks2
-  libglib2.0-bin
-  network-manager
-  dbus
+  apt install \
+  apparmor \
+  jq \
+  wget \
+  curl \
+  udisks2 \
+  libglib2.0-bin \
+  network-manager \
+  dbus \
   lsb-release -y
   systemd-journal-remote -y
   systemd-resolved -y
