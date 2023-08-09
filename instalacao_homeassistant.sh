@@ -130,14 +130,14 @@ install_osagents() {
   echo "A instalar os agents..."
   echo ""
 #  wget https://github.com/home-assistant/os-agent/releases/download/1.4.1/os-agent_1.4.1_linux_aarch64.deb
-#  wget https://github.com/home-assistant/os-agent/releases/download/1.5.1/os-agent_1.5.1_linux_aarch64.deb
-#  sudo dpkg -i os-agent_1.5.1_linux_aarch64.deb
-#  gdbus introspect --system --dest io.hass.os --object-path /io/hass/os
-#  systemctl status haos-agent --no-pager
-
-  wget https://github.com/home-assistant/os-agent/releases/download/1.4.1/os-agent_1.4.1_linux_aarch64.deb
-  sudo dpkg -i os-agent_1.4.1_linux_aarch64.deb
+  wget https://github.com/home-assistant/os-agent/releases/download/1.5.1/os-agent_1.5.1_linux_aarch64.deb
+  sudo dpkg -i os-agent_1.5.1_linux_aarch64.deb
   gdbus introspect --system --dest io.hass.os --object-path /io/hass/os
+  systemctl status haos-agent --no-pager
+
+#  wget https://github.com/home-assistant/os-agent/releases/download/1.4.1/os-agent_1.4.1_linux_aarch64.deb
+#  sudo dpkg -i os-agent_1.4.1_linux_aarch64.deb
+#  gdbus introspect --system --dest io.hass.os --object-path /io/hass/os
 }
 
 # ------------------------------------------------------------------------------
@@ -151,13 +151,9 @@ install_hassio() {
 #  apt-get install udisks2 wget -y
 #  wget https://github.com/home-assistant/supervised-installer/releases/latest/download/homeassistant-supervised.deb
 #  sudo dpkg -i homeassistant-supervised.deb
-#  wget https://github.com/home-assistant/supervised-installer/releases/latest/download/homeassistant-supervised.deb
-#  apt install ./homeassistant-supervised.deb
-
-  apt-get update
-  apt-get install udisks2 wget -y
   wget https://github.com/home-assistant/supervised-installer/releases/latest/download/homeassistant-supervised.deb
-  sudo dpkg -i --ignore-depends=systemd-resolved homeassistant-supervised.deb
+  apt install ./homeassistant-supervised.deb
+
 }
 
 # ==============================================================================
@@ -174,7 +170,7 @@ main() {
 
   # Install ALL THE THINGS!
   update_hostname
-#  update_armbian
+  update_armbian
   repair_apparmor_and_cgroups
   install_armbian-software
   update_operating_system
