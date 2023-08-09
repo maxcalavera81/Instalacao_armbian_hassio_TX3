@@ -152,7 +152,7 @@ install_hassio() {
 #  wget https://github.com/home-assistant/supervised-installer/releases/latest/download/homeassistant-supervised.deb
 #  sudo dpkg -i homeassistant-supervised.deb
   wget https://github.com/home-assistant/supervised-installer/releases/latest/download/homeassistant-supervised.deb
-  apt install ./homeassistant-supervised.deb
+  sudo dpkg -i --ignore-depends=systemd-resolved homeassistant-supervised.deb
 
 }
 
