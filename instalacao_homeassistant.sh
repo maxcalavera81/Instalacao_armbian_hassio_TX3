@@ -63,7 +63,7 @@ update_operating_system() {
     echo ""
     echo "A resolver o alerta de sistema incompatível..."
     echo ""
-    sed -i 's#Armbian 23.08.0-trunk lunar#Debian GNU/Linux 11 (bullseye)#g'  /etc/os-release
+    sed -i 's#Armbian 23.08.0-trunk Bullseye#Debian GNU/Linux 11 (bullseye)#g'  /etc/os-release
 #    sed -i 's#Armbian 23.02.0-trunk Bullseye#Debian GNU/Linux 11 (bullseye)#g'  /etc/os-release
 #    sed -i 's/Armbian 23.02.0-trunk Bullseye/Debian GNU/Linux 11 (bullseye)/g' etc/os-release
 }
@@ -130,10 +130,14 @@ install_osagents() {
   echo "A instalar os agents..."
   echo ""
 #  wget https://github.com/home-assistant/os-agent/releases/download/1.4.1/os-agent_1.4.1_linux_aarch64.deb
-  wget https://github.com/home-assistant/os-agent/releases/download/1.5.1/os-agent_1.5.1_linux_aarch64.deb
-  sudo dpkg -i os-agent_1.5.1_linux_aarch64.deb
-  gdbus introspect --system --dest io.hass.os --object-path /io/hass/os
+#  wget https://github.com/home-assistant/os-agent/releases/download/1.5.1/os-agent_1.5.1_linux_aarch64.deb
+#  sudo dpkg -i os-agent_1.5.1_linux_aarch64.deb
+#  gdbus introspect --system --dest io.hass.os --object-path /io/hass/os
 #  systemctl status haos-agent --no-pager
+
+  wget https://github.com/home-assistant/os-agent/releases/download/1.4.1/os-agent_1.4.1_linux_aarch64.deb
+  sudo dpkg -i os-agent_1.4.1_linux_aarch64.deb
+  gdbus introspect --system --dest io.hass.os --object-path /io/hass/os
 }
 
 # ------------------------------------------------------------------------------
@@ -143,12 +147,17 @@ install_hassio() {
   echo ""
   echo "A instalar o Home Assistant..."
   echo ""
+#  apt-get update
+#  apt-get install udisks2 wget -y
+#  wget https://github.com/home-assistant/supervised-installer/releases/latest/download/homeassistant-supervised.deb
+#  sudo dpkg -i homeassistant-supervised.deb
+#  wget https://github.com/home-assistant/supervised-installer/releases/latest/download/homeassistant-supervised.deb
+#  apt install ./homeassistant-supervised.deb
+
   apt-get update
   apt-get install udisks2 wget -y
   wget https://github.com/home-assistant/supervised-installer/releases/latest/download/homeassistant-supervised.deb
-  sudo dpkg -i homeassistant-supervised.deb
-#  wget https://github.com/home-assistant/supervised-installer/releases/latest/download/homeassistant-supervised.deb
-#  apt install ./homeassistant-supervised.deb
+  sudo dpkg -i --ignore-depends=systemd-resolved homeassistant-supervised.deb
 }
 
 # ==============================================================================
