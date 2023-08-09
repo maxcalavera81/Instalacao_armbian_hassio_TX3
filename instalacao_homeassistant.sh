@@ -97,7 +97,7 @@ install_dependences() {
   network-manager \
   dbus \
   lsb-release \
-  systemd-journal-remote \
+  systemd-journal-remote -y
   systemd-resolved -y
 }
 
