@@ -98,7 +98,7 @@ install_dependences() {
   dbus \
   lsb-release \
   systemd-journal-remote \
-#  systemd-resolved -s
+  systemd-resolved -y
 }
 
 # ------------------------------------------------------------------------------
